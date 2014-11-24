@@ -1,0 +1,1 @@
+User.create!(email: 'alexandre.ktifa@gmail.com', password: 'sefsefsef', password_confirmation: 'sefsefsef', is_admin: true)
