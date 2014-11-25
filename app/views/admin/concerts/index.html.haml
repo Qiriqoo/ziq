@@ -1,0 +1,19 @@
+#admin-concerts-index
+  - @concerts.each do |concert|
+    = concert.date
+    %br
+    = "#{concert.town} - #{concert.country}"
+    %br
+    = concert.hall
+    %br
+    = concert.works_by
+    %br
+    = concert.description
+    %br
+    = link_to 'Editer', admin_concert_path(concert)
+    = simple_form_for concert, url: admin_concert_path(concert), method: :delete do |f|
+      = f.submit 'Supprimer'
+    %br
+
+  %h2 Ajouter un concert
+  = render 'form', concert: @concert

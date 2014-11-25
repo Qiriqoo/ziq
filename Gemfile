@@ -8,6 +8,8 @@ gem 'rails_12factor', group: :production
 
 gem 'mandrill-rails'
 
+gem 'country_select', github: 'stefanpenner/country_select'
+
 
 # CSS
 gem 'bootstrap-sass', '~> 3.1.1'
