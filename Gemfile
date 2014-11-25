@@ -11,6 +11,8 @@ gem 'mandrill-rails'
 gem 'country_select', github: 'stefanpenner/country_select'
 
 
+gem 'coveralls', require: false
+
 # CSS
 gem 'bootstrap-sass', '~> 3.1.1'
 gem 'sass-rails', '~> 4.0.0'
