@@ -6,6 +6,8 @@
     = csrf_meta_tags
 
   %body
+    - flash.keys.each do |key|
+      = flash[key]
 
     = yield
     = javascript_include_tag 'admin'
