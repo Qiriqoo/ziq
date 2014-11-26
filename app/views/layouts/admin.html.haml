@@ -2,7 +2,7 @@
 %html
   %head
     %title Ziq
-    = stylesheet_link_tag 'admin', media: 'all'
+    = stylesheet_link_tag 'admin/admin', media: 'all'
     = csrf_meta_tags
 
   %body
@@ -10,4 +10,4 @@
       = flash[key]
 
     = yield
-    = javascript_include_tag 'admin'
+    = javascript_include_tag 'application'
